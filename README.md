@@ -77,6 +77,14 @@ Esse valor foi identificado como uma possível senha.
 
 ## 3. Authentication
 
-![Pickle Rick](screenshots/pag_login.png)
+![Pickle Rick](screenshots/login.png)
 
+Após autenticação, foi identificado um painel de comandos:
+
+portal.php
+
+
+O painel permitia execução de comandos no servidor.
+
+Teste realizado:
 
