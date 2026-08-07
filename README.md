@@ -1,8 +1,6 @@
-
+![Pickle Rick](screenshots/pickle_rick_capa.png)
 # Pickle-Rick-CTF
 Write-up técnico do CTF Pickle Rick (TryHackMe), documentando enumeração, exploração web e escalada de privilégios em ambiente Linux.
-
-# 🥒 TryHackMe — Pickle Rick
 
 ## 📌 Informações da Máquina
 
@@ -30,9 +28,15 @@ Durante a fase inicial de reconhecimento foi realizado um scan de portas.
 
 ```bash
 nmap -sV -sC prickctf
-#Foram encontrados os serviços:
+```
+# Foram encontrados os serviços:
+```text
 22/tcp open ssh
 80/tcp open http
+```
+# 2. Web Enumeration
+
+## Source Code Analysis
 
 
 
