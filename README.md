@@ -78,13 +78,37 @@ Esse valor foi identificado como uma possível senha.
 ## 3. Authentication
 
 ![Pickle Rick](screenshots/login.png)
+Autenticação realizada com credenciais encontradas anteriormente.
 
-Após autenticação, foi identificado um painel de comandos:
+## 4. Command Injection
 
-portal.php
-
-
-O painel permitia execução de comandos no servidor.
-
+Após autenticação, foi identificado um painel de comandos. O painel permitia execução de comandos no servidor.
 Teste realizado:
+![Pickle Rick](screenshots/portal.png)
+A partir da vulnerabilidade encontrada Remote Command Execution (RCE), que fazia o sistema permitir que comandos arbitrários fossem executados pelo usuário web.
+Foi possível seguir com a exploração.
+Primeiro verifiquei qual usuário se tratava:
+
+```bash
+whoami
+```
+que retornou o usuário : 
+```bash
+www-data.
+```
+
+#  Command disabled
+Durante o processo de exploração da vulnerabilidade, me deparei com o bloqueio do comando cat, realizei as demais consultas utilizando o comando less para contornar o bloqueio.
+![Pickle Rick](screenshots/erro.png)
+
+## 5. Capture the First Flag 🚩
+Utilizado o comando alternativo:
+```bash
+less Sup3rS3cretPickl3Ingred.txt
+```
+Conteúdo encontrado:
+```bash
+REDACTED
+```
+## 🚩 Primeira Flag Obtida 🚩
 
